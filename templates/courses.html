@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+<h1>Courses for Today</h1>
+
+
+{% for i in courses %}
+<h1>Post Title:{{ i.title }}</h1> 
+<p>Post Desc:{{ i.description }}</p>
+<h1>Posted BY:{{ i.createdby }}</h1>
+{% endfor %}
+
+{% endblock content %}
